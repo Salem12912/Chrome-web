@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chrome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .welcome-container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .welcome-title {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .welcome-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.7;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .chrome-logo {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .chrome-logo:hover {
+            transform: scale(1.05);
+        }
+        
+        #textbox {
+            background: rgba(0,0,0,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out 0.9s both;
+            color: #333;
+        }
+        
+        .instructions {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.6;
+            animation: fadeInUp 1s ease-out 1.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 2em;
+            }
+            .chrome-logo {
+                max-width: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .welcome-title {
+                font-size: 1.5em;
+            }
+            .chrome-logo {
+                max-width: 200px;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 class="welcome-title">Welcome to Chrome</h1>
+        <p class="welcome-subtitle">Experience the web like never before</p>
+        
+        <svg class="chrome-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 331.78 382.95">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #19a462;
+                        cursor: pointer;
+                        transition: fill 0.3s ease;
+                    }
+                    .cls-2 {
+                        fill: #eb1d24;
+                        cursor: pointer;
+                        transition: fill 0.3s ease;
+                    }
+                    .cls-3 {
+                        fill: #5c84c3;
+                        cursor: pointer;
+                        transition: fill 0.3s ease;
+                    }
+                    .cls-4 {
+                        fill: #ffce45;
+                        cursor: pointer;
+                        transition: fill 0.3s ease;
+                    }
+                    .cls-1:hover { fill: #22c470; }
+                    .cls-2:hover { fill: #ff2730; }
+                    .cls-3:hover { fill: #6a92d1; }
+                    .cls-4:hover { fill: #ffd95a; }
+                </style>
+            </defs>
+            <path id="red" class="cls-2" d="M26.36,125.58c14.73-17.05,34.11-34.88,34.11-34.88l27.13-18.6,33.33-15.5,42.11-5.43h28.43l37.98,12.4,27.91,12.4,27.91,24.81,27.91,38.6-134.11,3.26h-26.36l-17.83,4.65-13.18,9.3-13.18,10.85-8.53,13.95-5.43,10.85-3.88,13.95v17.83l3.88,20.93L26.36,125.58Z"/>
+            <polygon id="yellow" class="cls-4" points="313.18 139.38 326.36 167.44 331.78 195.35 331.78 227.91 327.91 258.91 319.38 285.27 303.88 310.85 286.05 334.88 265.12 351.94 243.41 365.89 216.28 375.97 192.25 382.95 166.79 382.95 163.04 382.95 159.69 379.07 229.46 261.16 240.31 241.09 245.74 211.63 237.98 189.15 228.68 172.09 216.28 159.69 194.57 148.06 179.07 142.64 313.18 139.38"/>
+            <polygon id="green" class="cls-1" points="26.36 125.58 94.57 244.96 108.53 268.99 125.58 283.72 149.61 292.25 181.4 292.25 202.33 284.5 223.54 271.17 226.58 266.02 159.69 379.07 145.74 382.95 126.47 378.29 106.98 372.09 83.72 362.79 60.47 346.51 38.76 324.03 20.93 296.9 10.08 272.87 3.88 254.26 0 227.13 0 203.88 6.98 172.09 26.36 125.58"/>
+            <polygon id="blue" class="cls-3" points="106.2 205.43 106.2 223.26 109.3 235.66 113.29 248.06 120.93 254.26 128.68 264.34 140.31 270.54 151.94 275.97 166.79 275.97 177.52 275.97 187.6 275.97 196.9 268.22 206.2 261.16 215.5 249.61 226.58 237.21 226.58 217.44 226.58 201.55 217.05 186.82 207.75 175.19 191.47 162.02 175.19 155.81 155.81 155.81 136.43 163.57 122.48 174.42 113.29 192.25 106.2 205.43"/>
+        </svg>
+        
+        <div id="textbox">Click on any color section of the Chrome logo above!</div>
+        
+        <p class="instructions">Interactive Chrome logo - each color responds to your click</p>
+    </div>
+
+    <script>
+        // Add click events to each colored section
+        document.getElementById("red").addEventListener("click", () => {
+            document.getElementById("textbox").innerHTML = "🔴 Red Power! You clicked the red section of Chrome!";
+        });
+
+        document.getElementById("yellow").addEventListener("click", () => {
+            document.getElementById("textbox").innerHTML = "🟡 Yellow Sunshine! Bright choice on the yellow section!";
+        });
+
+        document.getElementById("green").addEventListener("click", () => {
+            document.getElementById("textbox").innerHTML = "🟢 Green Energy! You selected the green part of Chrome!";
+        });
+
+        document.getElementById("blue").addEventListener("click", () => {
+            document.getElementById("textbox").innerHTML = "🔵 Blue Brilliance! You clicked the blue section!";
+        });
+
+        // Add a welcome message that appears after a delay
+        setTimeout(() => {
+            if (document.getElementById("textbox").innerText === "Click on any color section of the Chrome logo above!") {
+                document.getElementById("textbox").innerHTML = "🌟 <strong>Welcome to Chrome!</strong> Start exploring by clicking the colors above.";
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
